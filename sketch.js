@@ -48,7 +48,7 @@ function getText() {
     var lineIndex = floor(random(poem.lines.length));
     var line = poem.lines[lineIndex];
     var line = line.replace(/[^a-zA-Z ]/g, "");
-    console.log(line);
+//     console.log(line);
     line = line.split(" ");
     var wordIndex = floor(random(line.length));
     word = line[wordIndex];
@@ -58,7 +58,7 @@ function getText() {
 
 function createMagnets() {
   words = [];
-  for(var i = 0; i < 20; i++) {
+  for(var i = 0; i < 50; i++) {
     getText();
   }
 }
